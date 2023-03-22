@@ -1,0 +1,43 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_flagship_mesh"
+		file = "gfx/models/ships/fairy_01/flagship/fairy_01_flagship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "flagshiip:Object17338Shape"
+			index = 0
+			texture_diffuse = "Flagship_hull_diffuse.dds"
+			texture_normal = "Flagship_hull_normal.dds"
+			texture_specular = "Flagship_hull_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "flagshiip:Object17337Shape"
+			index = 0
+			texture_diffuse = "Flagship_Island_diffuse.dds"
+			texture_normal = "Flagship_Island_normal.dds"
+			texture_specular = "Flagship_Island_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "flagshiip:Object17336Shape"
+			index = 0
+			texture_diffuse = "Flagship_engine_diffuse.dds"
+			texture_normal = "Flagship_engine_normal.dds"
+			texture_specular = "Flagship_engine_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "flagshiip:Object17335Shape"
+			index = 0
+			texture_diffuse = "Flagship_shield_diffuse.dds"
+			texture_normal = "Flagship_shield_normal.dds"
+			texture_specular = "Flagship_shield_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

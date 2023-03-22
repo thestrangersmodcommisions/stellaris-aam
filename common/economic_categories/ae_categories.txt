@@ -1,0 +1,49 @@
+ae_buildings = {
+	parent = stations
+	generate_mult_modifiers = {
+ 		produces
+		upkeep
+ 	}
+}
+ae_buildings_energy = {
+	parent = ae_buildings
+	generate_add_modifiers = {
+ 		produces
+ 	}
+}
+ae_buildings_minerals = {
+	parent = ae_buildings
+	generate_add_modifiers = {
+ 		produces
+ 	}
+}
+ae_buildings_food = {
+	parent = ae_buildings
+	generate_add_modifiers = {
+ 		produces
+ 	}
+}
+ae_buildings_alloys = {
+	parent = ae_buildings
+	generate_add_modifiers = {
+ 		produces
+ 	}
+}
+ae_buildings_consumer_goods = {
+	parent = ae_buildings
+	generate_add_modifiers = {
+ 		produces
+ 	}
+}
+ae_buildings_research = {
+	parent = ae_buildings
+	generate_mult_modifiers = {
+ 		produces
+ 	}
+}
+ae_buildings_unity = {
+	parent = ae_buildings
+	generate_mult_modifiers = {
+ 		produces
+ 	}
+}

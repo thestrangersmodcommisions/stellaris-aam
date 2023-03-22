@@ -1,0 +1,210 @@
+namespace = ae_events
+####################################################
+### Alderson Disk ##################################
+####################################################
+# Init Home System
+event = {
+	id = ae_events.001
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = { has_origin = aam_origin }
+			country_event = { id = ae_events.002 }
+		}
+		
+	}
+}
+country_event = {
+	id = ae_events.002
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		save_event_target_as = aam_old_country
+		create_country = {
+			name = root
+			adjective = root
+			contact_rule = does_first_contact_sites
+			type = default
+			auto_delete = no
+			species = root.species
+			origin = aam_origin
+			civics = root
+			ethos = root
+			authority = root
+			flag = root
+			ignore_initial_colony_error = yes
+			#restrictions = {
+			effect = { 
+				save_event_target_as = aam_new_country
+
+				create_fleet = {
+					effect = {
+						set_owner = prev
+						create_ship = {
+							name = random
+							design = "NAME_Ark"
+						}
+						set_location = event_target:aam_old_country.capital_star
+						
+					}
+				}
+				create_leader = {
+					class = scientist
+					sub_type = physics
+					name = random
+					species = owner_main_species
+				}
+				create_leader = {
+					class = scientist
+					sub_type = engineering
+					name = random
+					species = owner_main_species
+				}
+				create_leader = {
+					class = scientist
+					sub_type = society
+					name = random
+					species = owner_main_species
+				}
+				create_fleet = {
+					effect = {
+						set_owner = prev
+
+						create_ship = {
+							name = random
+							random_existing_design = science
+						}
+
+						set_fleet_stance = evasive
+						set_location = event_target:aam_old_country.capital_star
+
+						owner = {
+							create_leader = {
+								class = scientist
+								sub_type = survey
+								name = random
+								species = owner_main_species
+							}
+						}
+						set_leader = last_created_leader
+					}
+				}
+				create_fleet = {
+					effect = {
+						set_owner = prev
+
+						create_ship = {
+							name = random
+							random_existing_design = constructor
+						}
+
+						set_fleet_stance = evasive
+						set_location = event_target:aam_old_country.capital_star
+					}
+				}
+				country_event = { id = game_start.8 }
+				
+			}
+		}
+		event_target:aam_new_country = { set_player = event_target:aam_old_country}
+		
+		event_target:aam_old_country = {
+			destroy_country = yes
+		}
+	}
+}
+ship_event = {
+	id = ae_events.010
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR ={
+			is_ship_size = ae_harvester
+			is_ship_size = ae_archiver
+		}
+	}
+	immediate = {
+		add_modifier = {
+			modifier = ae_ship_debuff_1
+			years = 1
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_2
+			years = 2
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_3
+			years = 3
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_4
+			years = 4
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_5
+			years = 5
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_6
+			years = 6
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_7
+			years = 7
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_8
+			years = 8
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_9
+			years = 9
+		}		
+		add_modifier = {
+			modifier = ae_ship_debuff_10
+			years = 10
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_11
+			years = 11
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_12
+			years = 12
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_13
+			years = 13
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_14
+			years = 14
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_15
+			years = 15
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_16
+			years = 16
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_17
+			years = 17
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_18
+			years = 18
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_19
+			years = 19
+		}
+		add_modifier = {
+			modifier = ae_ship_debuff_20
+			years = 20
+		}
+	}
+}

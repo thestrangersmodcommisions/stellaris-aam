@@ -1,0 +1,82 @@
+ship_design = {
+	name = "NAME_Ark"
+	ship_size = ae_ark
+
+	section = {
+		template = "AE_ARK_SECTION_WEAPONS_1"
+		slot = "weapons"
+	}
+	section = {
+		template = "AE_ARK_SECTION_CORE_1"
+		slot = "core"
+	}
+	section = {
+		template = "AE_ARK_SECTION_RESOURCE"
+		slot = "aux"
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AE_ENERGY_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "AE_ENERGY_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "AE_ENERGY_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "AE_ENERGY_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_5"
+			template = "AE_ENERGY_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_6"
+			template = "AE_ENERGY_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_7"
+			template = "AE_MINERALS_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_8"
+			template = "AE_MINERALS_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_9"
+			template = "AE_MINERALS_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_10"
+			template = "AE_MINERALS_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_11"
+			template = "AE_ALLOYS_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_12"
+			template = "AE_ALLOYS_1"
+		}
+		
+		component = {
+			slot = "AUX_UTILITY_13"
+			template = "AE_RESEARCH_1"
+		}
+		component = {
+			slot = "AUX_UTILITY_14"
+			template = "AE_UNITY_1"
+		}
+		
+		
+	}
+	required_component="AE_SHIP_FISSION_REACTOR"
+	required_component="SENSOR_1"
+	required_component="AE_COMBAT_COMPUTER_ARTILLERY_DEFAULT"
+	required_component="HYPER_DRIVE_1"
+	required_component="AE_SHIP_THRUSTER_1"
+	
+}

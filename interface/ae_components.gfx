@@ -1,0 +1,114 @@
+spriteTypes = {
+	spriteType = {
+        name = "GFX_ae_shipyard"
+        texturefile = "gfx/interface/icons/ae_shipyard.dds"
+    }
+    spriteType = {
+        name = "GFX_ae_energy_1"
+        texturefile = "gfx/interface/icons/ae_energy_1.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_energy_2"
+        texturefile = "gfx/interface/icons/ae_energy_2.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_energy_3"
+        texturefile = "gfx/interface/icons/ae_energy_3.dds"
+    }
+    spriteType = {
+        name = "GFX_ae_minerals_1"
+        texturefile = "gfx/interface/icons/ae_minerals_1.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_minerals_2"
+        texturefile = "gfx/interface/icons/ae_minerals_2.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_minerals_3"
+        texturefile = "gfx/interface/icons/ae_minerals_3.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_food_1"
+        texturefile = "gfx/interface/icons/ae_food_1.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_food_2"
+        texturefile = "gfx/interface/icons/ae_food_2.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_food_3"
+        texturefile = "gfx/interface/icons/ae_food_3.dds"
+    }
+    spriteType = {
+        name = "GFX_ae_alloys_1"
+        texturefile = "gfx/interface/icons/ae_alloys_1.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_alloys_2"
+        texturefile = "gfx/interface/icons/ae_alloys_2.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_alloys_3"
+        texturefile = "gfx/interface/icons/ae_alloys_3.dds"
+    }
+    spriteType = {
+        name = "GFX_ae_consumer_goods_1"
+        texturefile = "gfx/interface/icons/ae_consumer_goods_1.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_consumer_goods_2"
+        texturefile = "gfx/interface/icons/ae_consumer_goods_2.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_consumer_goods_3"
+        texturefile = "gfx/interface/icons/ae_consumer_goods_3.dds"
+    }
+    spriteType = {
+        name = "GFX_ae_volatile_motes_1"
+        texturefile = "gfx/interface/icons/ae_volatile_motes_1.dds"
+    }
+    spriteType = {
+        name = "GFX_ae_exotic_gases_1"
+        texturefile = "gfx/interface/icons/ae_exotic_gases_1.dds"
+    }
+    spriteType = {
+        name = "GFX_ae_rare_crystals_1"
+        texturefile = "gfx/interface/icons/ae_rare_crystals_1.dds"
+    }
+    spriteType = {
+        name = "GFX_ae_resource_silo"
+        texturefile = "gfx/interface/icons/ae_resource_silo.dds"
+    }
+    spriteType = {
+        name = "GFX_ae_research_1"
+        texturefile = "gfx/interface/icons/ae_research_1.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_research_2"
+        texturefile = "gfx/interface/icons/ae_research_2.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_research_3"
+        texturefile = "gfx/interface/icons/ae_research_3.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_research_4"
+        texturefile = "gfx/interface/icons/ae_research_4.dds"
+    }
+    spriteType = {
+        name = "GFX_ae_unity_1"
+        texturefile = "gfx/interface/icons/ae_unity_1.dds"
+    }
+    spriteType = {
+        name = "GFX_ae_unity_2"
+        texturefile = "gfx/interface/icons/ae_unity_2.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_unity_3"
+        texturefile = "gfx/interface/icons/ae_unity_3.dds"
+    }
+	spriteType = {
+        name = "GFX_ae_unity_4"
+        texturefile = "gfx/interface/icons/ae_unity_4.dds"
+    }
+}

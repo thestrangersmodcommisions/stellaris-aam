@@ -1,0 +1,597 @@
+
+@ae_T1_advanced_power_cost = -400
+@ae_T2_advanced_power_cost = -600
+@ae_T3_advanced_power_cost = -800
+
+@ae_T1_advanced_alloys_cost = 200
+@ae_T2_advanced_alloys_cost = 300
+@ae_T3_advanced_alloys_cost = 400
+
+@ae_T2_advanced_sr_cost = 100
+@ae_T3_advanced_sr_cost = 200
+
+@ae_T1_advanced_energy_upkeep = 2
+@ae_T2_advanced_energy_upkeep = 5
+@ae_T3_advanced_energy_upkeep = 8
+
+@ae_T2_advanced_sr_upkeep = 2
+@ae_T3_advanced_sr_upkeep = 4
+
+@ae_2jobs_upkeep = 2
+@ae_4jobs_upkeep = 4
+@ae_6jobs_upkeep = 6
+
+utility_component_template = {
+	key = "AE_ALLOYS_1"
+	size = aux
+	icon = "GFX_ae_alloys_1"
+	icon_frame = 1
+	power = @ae_T1_advanced_power_cost
+	
+	prerequisites = { "tech_basic_industry" }
+	component_set = "AE_ALLOYS_1"
+	size_restriction = { ae_harvester ae_ark }
+	
+	resources = {
+		category = ae_buildings_alloys
+		cost = {
+			alloys = @ae_T1_advanced_alloys_cost
+		}
+		
+		upkeep = {
+			energy = @ae_T1_advanced_energy_upkeep
+			minerals = 16
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		
+		produces = {
+			alloys = 8
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_ALLOYS_2"
+	size = aux
+	icon = "GFX_ae_alloys_2"
+	icon_frame = 1
+	power = @ae_T2_advanced_power_cost
+	
+	
+	prerequisites = { "tech_alloys_1" }
+	component_set = "AE_ALLOYS_2"
+	size_restriction = { ae_harvester ae_ark }
+	
+	upgrades_to = "AE_ALLOYS_3"
+	ship_limit = 1
+	blocked_by = {
+		AE_ALLOYS_3
+	}
+	modifier = {
+		ae_buildings_alloys_alloys_produces_add = 2
+	}
+	resources = {
+		category = ae_buildings
+		cost = {
+			alloys = @ae_T2_advanced_alloys_cost
+			volatile_motes = @ae_T2_advanced_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T2_advanced_energy_upkeep
+			volatile_motes = @ae_T2_advanced_sr_upkeep
+			minerals = 16
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			alloys = 10
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_ALLOYS_3"
+	size = aux
+	icon = "GFX_ae_alloys_3"
+	icon_frame = 1
+	power = @ae_T3_advanced_power_cost
+	
+	
+	prerequisites = { "tech_alloys_2" }
+	component_set = "AE_ALLOYS_3"
+	size_restriction = { ae_harvester ae_ark }
+	
+	ship_limit = 1
+	blocked_by = {
+		AE_ALLOYS_2
+	}
+	modifier = {
+		ae_buildings_alloys_alloys_produces_add = 4
+	}
+	resources = {
+		category = ae_buildings
+		cost = {
+			alloys = @ae_T3_advanced_alloys_cost
+			volatile_motes = @ae_T3_advanced_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T3_advanced_energy_upkeep
+			volatile_motes = @ae_T3_advanced_sr_upkeep
+			minerals = 16
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			alloys = 12
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_CONSUMER_GOODS_1"
+	size = aux
+	icon = "GFX_ae_consumer_goods_1"
+	icon_frame = 1
+	power = @ae_T1_advanced_power_cost
+	
+	prerequisites = { "tech_basic_industry" }
+	component_set = "AE_CONSUMER_GOODS_1"
+	size_restriction = { ae_harvester ae_ark }
+	
+	resources = {
+		category = ae_buildings_consumer_goods
+		cost = {
+			alloys = @ae_T1_advanced_alloys_cost
+		}
+		upkeep = {
+			energy = @ae_T1_advanced_energy_upkeep
+			minerals = 12
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			consumer_goods = 6
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_CONSUMER_GOODS_2"
+	size = aux
+	icon = "GFX_ae_consumer_goods_2"
+	icon_frame = 1
+	power = @ae_T2_advanced_power_cost
+	
+	
+	prerequisites = { "tech_luxuries_1" }
+	component_set = "AE_CONSUMER_GOODS_2"
+	size_restriction = { ae_harvester ae_ark }
+	
+	upgrades_to = "AE_CONSUMER_GOODS_3"
+	ship_limit = 1
+	blocked_by = {
+		AE_CONSUMER_GOODS_3
+	}
+	modifier = {
+		ae_buildings_consumer_goods_consumer_goods_produces_add = 2
+	}
+	resources = {
+		category = ae_buildings
+		cost = {
+			alloys = @ae_T2_advanced_alloys_cost
+			rare_crystals = @ae_T2_advanced_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T2_advanced_energy_upkeep
+			minerals = 12
+			rare_crystals = @ae_T2_advanced_sr_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			consumer_goods = 8
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_CONSUMER_GOODS_3"
+	size = aux
+	icon = "GFX_ae_consumer_goods_3"
+	icon_frame = 1
+	power = @ae_T3_advanced_power_cost
+	
+	
+	prerequisites = { "tech_luxuries_2" }
+	component_set = "AE_CONSUMER_GOODS_3"
+	size_restriction = { ae_harvester ae_ark }
+	
+	ship_limit = 1
+	blocked_by = {
+		AE_CONSUMER_GOODS_2
+	}
+	modifier = {
+		ae_buildings_consumer_goods_consumer_goods_produces_add = 4
+	}
+	resources = {
+		category = ae_buildings
+		cost = {
+			alloys = @ae_T3_advanced_alloys_cost
+			rare_crystals = @ae_T3_advanced_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T3_advanced_energy_upkeep
+			minerals = 12
+			rare_crystals = @ae_T3_advanced_sr_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			consumer_goods = 10
+		}
+	}
+}
+
+
+#2 jobs
+utility_component_template = {
+	key = "AE_RESEARCH_1"
+	size = aux
+	icon = "GFX_ae_research_1"
+	icon_frame = 1
+	power = @ae_T1_advanced_power_cost
+	
+	prerequisites = { "tech_basic_science_lab_1" }
+	component_set = "AE_RESEARCH_1"
+	size_restriction = { ae_archiver ae_ark }
+	
+	upgrades_to = "AE_RESEARCH_2"
+	resources = {
+		category = ae_buildings_research
+		cost = {
+			alloys = @ae_T1_advanced_alloys_cost
+		}
+		upkeep = {
+			energy = @ae_T1_advanced_energy_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		upkeep = {
+			energy = 8
+		}
+		produces = {
+			physics_research = 8
+			engineering_research = 8
+			society_research = 8
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_RESEARCH_2"
+	size = aux
+	icon = "GFX_ae_research_2"
+	icon_frame = 1
+	power = @ae_T2_advanced_power_cost
+	
+	prerequisites = { "tech_basic_science_lab_2" }
+	component_set = "AE_RESEARCH_2"
+	size_restriction = { ae_archiver ae_ark }
+	
+	upgrades_to = "AE_RESEARCH_3"
+	resources = {
+		category = ae_buildings_research
+		cost = {
+			alloys = @ae_T2_advanced_alloys_cost
+			exotic_gases = @ae_T2_advanced_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T2_advanced_energy_upkeep
+			exotic_gases = @ae_T2_advanced_sr_upkeep
+		}
+		upkeep = {
+			energy = @ae_4jobs_upkeep
+		}
+		upkeep = {
+			energy = 16
+		}
+		produces = {
+			physics_research = 16
+			engineering_research = 16
+			society_research = 16
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AE_RESEARCH_3"
+	size = aux
+	icon = "GFX_ae_research_3"
+	icon_frame = 1
+	power = @ae_T3_advanced_power_cost
+	
+	prerequisites = { "tech_basic_science_lab_3" }
+	component_set = "AE_RESEARCH_3"
+	size_restriction = { ae_archiver ae_ark }
+	
+	resources = {
+		category = ae_buildings_research
+		cost = {
+			alloys = @ae_T3_advanced_alloys_cost
+			exotic_gases = @ae_T3_advanced_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T3_advanced_energy_upkeep
+			exotic_gases = @ae_T3_advanced_sr_upkeep
+		}
+		upkeep = {
+			energy = @ae_6jobs_upkeep
+		}
+		upkeep = {
+			energy = 24
+		}
+		produces = {
+			physics_research = 24
+			engineering_research = 24
+			society_research = 24
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_RESEARCH_4"
+	size = aux
+	icon = "GFX_ae_research_4"
+	icon_frame = 1
+	power = @ae_T3_advanced_power_cost
+	
+	prerequisites = { "tech_global_research_initiative" }
+	component_set = "AE_RESEARCH_4"
+	size_restriction = { ae_archiver ae_ark }
+	
+	ship_limit = 1
+	modifier = {
+		ae_buildings_research_physics_research_produces_mult = 0.15
+		ae_buildings_research_engineering_research_produces_mult = 0.15
+		ae_buildings_research_society_research_produces_mult = 0.15
+	}
+	resources = {
+		category = ae_buildings
+		cost = {
+			alloys = @ae_T3_advanced_alloys_cost
+			exotic_gases = @ae_T3_advanced_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T3_advanced_energy_upkeep
+			exotic_gases = @ae_T3_advanced_sr_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		upkeep = {
+			energy = 24
+		}
+		produces = {
+			physics_research = 24
+			engineering_research = 24
+			society_research = 24
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AE_UNITY_1"
+	size = aux
+	icon = "GFX_ae_unity_1"
+	icon_frame = 1
+	power = @ae_T1_advanced_power_cost
+
+	prerequisites = { "tech_planetary_government" }
+	component_set = "AE_UNITY_1"
+	size_restriction = { ae_archiver ae_ark }
+	
+	upgrades_to = "AE_UNITY_2"
+	resources = {
+		category = ae_buildings_unity
+		cost = {
+			alloys = @ae_T1_advanced_alloys_cost
+		}
+		upkeep = {
+			energy = @ae_T1_advanced_energy_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		upkeep = {
+			energy = 8
+		}
+		produces = {
+			unity = 8
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_UNITY_2"
+	size = aux
+	icon = "GFX_ae_unity_2"
+	icon_frame = 1
+	power = @ae_T2_advanced_power_cost
+
+	prerequisites = { "tech_colonial_bureaucracy" }
+	component_set = "AE_UNITY_2"
+	size_restriction = { ae_archiver ae_ark }
+	
+	upgrades_to = "AE_UNITY_3"
+	resources = {
+		category = ae_buildings_unity
+		cost = {
+			alloys = @ae_T2_advanced_alloys_cost
+			rare_crystals = @ae_T2_advanced_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T2_advanced_energy_upkeep
+			rare_crystals = @ae_T2_advanced_sr_upkeep
+		}
+		upkeep = {
+			energy = @ae_4jobs_upkeep
+		}
+		upkeep = {
+			energy = 16
+		}
+		produces = {
+			unity = 16
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_UNITY_3"
+	size = aux
+	icon = "GFX_ae_unity_3"
+	icon_frame = 1
+	power = @ae_T3_advanced_power_cost
+
+	prerequisites = { "tech_galactic_bureaucracy" }
+	component_set = "AE_UNITY_3"
+	size_restriction = { ae_archiver ae_ark }
+	
+	resources = {
+		category = ae_buildings_unity
+		cost = {
+			alloys = @ae_T3_advanced_alloys_cost
+			rare_crystals = @ae_T3_advanced_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T3_advanced_energy_upkeep
+			rare_crystals = @ae_T3_advanced_sr_upkeep
+		}
+		upkeep = {
+			energy = @ae_6jobs_upkeep
+		}
+		upkeep = {
+			energy = 24
+		}
+		produces = {
+			unity = 24
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_UNITY_4"
+	size = aux
+	icon = "GFX_ae_unity_4"
+	icon_frame = 1
+	power = @ae_T3_advanced_power_cost
+
+	prerequisites = { "tech_hypercomms_forum" }
+	component_set = "AE_UNITY_4"
+	size_restriction = { ae_archiver ae_ark }
+	ship_limit = 1
+	modifier = {
+		ae_buildings_unity_unity_produces_mult = 0.15
+	}
+	resources = {
+		category = ae_buildings
+		cost = {
+			alloys = @ae_T3_advanced_alloys_cost
+			rare_crystals = @ae_T3_advanced_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T3_advanced_energy_upkeep
+			rare_crystals = @ae_T3_advanced_sr_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		upkeep = {
+			energy = 24
+		}
+		produces = {
+			unity = 24
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_VOLATILE_MOTES_1"
+	size = aux
+	icon = "GFX_ae_chemical_plant"
+	icon_frame = 1
+	power = @ae_T1_advanced_power_cost
+	
+	prerequisites = { "tech_volatile_motes" }
+	component_set = "AE_VOLATILE_MOTES_1"
+	size_restriction = { ae_harvester ae_ark }
+	
+	resources = {
+		category = ae_buildings
+		cost = {
+			alloys = 250
+		}
+		upkeep = {
+			energy = 3
+			minerals = 10
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			volatile_motes = 2
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_EXOTIC_GASES_1"
+	size = aux
+	icon = "GFX_ae_gas_refinery"
+	icon_frame = 1
+	power = @ae_T1_advanced_power_cost
+	
+	prerequisites = { "tech_exotic_gases" }
+	component_set = "AE_EXOTIC_GASES_1"
+	size_restriction = { ae_harvester ae_ark }
+	
+	resources = {
+		category = ae_buildings
+		cost = {
+			alloys = 250
+		}
+		upkeep = {
+			energy = 3
+			minerals = 10
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			exotic_gases = 2
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_RARE_CRYSTALS_1"
+	size = aux
+	icon = "GFX_ae_crystal_plant"
+	icon_frame = 1
+	power = @ae_T1_advanced_power_cost
+	
+	prerequisites = { "tech_rare_crystals" }
+	component_set = "AE_RARE_CRYSTALS_1"
+	size_restriction = { ae_harvester ae_ark }
+	
+	resources = {
+		category = ae_buildings
+		cost = {
+			alloys = 250
+		}
+		upkeep = {
+			energy = 3
+			minerals = 10
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			rare_crystals = 2
+		}
+	}
+}

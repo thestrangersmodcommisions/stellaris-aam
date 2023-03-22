@@ -1,0 +1,179 @@
+
+component_set = {
+	key = "AE_REQUIRED"
+
+	icon = "GFX_ae_required"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_SHIPYARD"
+
+	icon = "GFX_ae_shipyard"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_ENERGY_1"
+
+	icon = "GFX_ae_energy_1"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_ENERGY_2"
+
+	icon = "GFX_ae_energy_2"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_ENERGY_3"
+
+	icon = "GFX_ae_energy_3"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_MINERALS_1"
+
+	icon = "GFX_ae_minerals_1"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_MINERALS_2"
+
+	icon = "GFX_ae_minerals_2"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_MINERALS_3"
+
+	icon = "GFX_ae_minerals_3"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_FOOD_1"
+
+	icon = "GFX_ae_food_1"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_FOOD_2"
+
+	icon = "GFX_ae_food_2"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_FOOD_3"
+
+	icon = "GFX_ae_food_3"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_ALLOYS_1"
+
+	icon = "GFX_ae_alloys_1"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_ALLOYS_2"
+
+	icon = "GFX_ae_alloys_2"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_ALLOYS_3"
+
+	icon = "GFX_ae_alloys_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AE_CONSUMER_GOODS_1"
+
+	icon = "GFX_ae_consumer_goods_1"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_CONSUMER_GOODS_2"
+
+	icon = "GFX_ae_consumer_goods_2"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_CONSUMER_GOODS_3"
+
+	icon = "GFX_ae_consumer_goods_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AE_VOLATILE_MOTES_1"
+
+	icon = "GFX_ae_volatile_motes_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AE_EXOTIC_GASES_1"
+
+	icon = "GFX_ae_exotic_gases_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "AE_RARE_CRYSTALS_1"
+
+	icon = "GFX_ae_rare_crystals_1"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_RESOURCE_SILO"
+
+	icon = "GFX_ae_resource_silo"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_RESEARCH_1"
+
+	icon = "GFX_ae_research_1"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_RESEARCH_2"
+
+	icon = "GFX_ae_research_2"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_RESEARCH_3"
+
+	icon = "GFX_ae_research_3"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_RESEARCH_4"
+
+	icon = "GFX_ae_research_4"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_UNITY_1"
+
+	icon = "GFX_ae_unity_1"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_UNITY_2"
+
+	icon = "GFX_ae_unity_2"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_UNITY_3"
+
+	icon = "GFX_ae_unity_3"
+	icon_frame = 1
+}
+component_set = {
+	key = "AE_UNITY_4"
+
+	icon = "GFX_ae_unity_4"
+	icon_frame = 1
+}

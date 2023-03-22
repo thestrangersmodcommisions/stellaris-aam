@@ -1,0 +1,308 @@
+ship_section_template = {
+	key = "AE_HARVESTER_SECTION_CORE_5"
+	ship_size = ae_harvester
+
+	fits_on_slot = "core"
+	entity = "fairy_01_juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { carrier artillery }
+
+	prerequisites = { tech_starbase_5 }
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "root"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "root"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 16
+	aux_utility_slots = 0
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+
+ship_section_template = {
+	key = "AE_HARVESTER_SECTION_CORE_4"
+	ship_size = ae_harvester
+
+	fits_on_slot = "core"
+	entity = "fairy_01_juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { carrier artillery }
+
+	prerequisites = { tech_starbase_4 }
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "root"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "root"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 12
+	aux_utility_slots = 0
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+ship_section_template = {
+	key = "AE_HARVESTER_SECTION_CORE_3"
+	ship_size = ae_harvester
+
+	fits_on_slot = "core"
+	entity = "fairy_01_juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { carrier artillery }
+
+	prerequisites = { tech_starbase_3 }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "root"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "root"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 8
+	aux_utility_slots = 0
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+ship_section_template = {
+	key = "AE_HARVESTER_SECTION_CORE_2"
+	ship_size = ae_harvester
+
+	fits_on_slot = "core"
+	entity = "fairy_01_juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { carrier artillery }
+
+	prerequisites = { tech_starbase_2 }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "root"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "root"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
+	aux_utility_slots = 0
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+ship_section_template = {
+	key = "AE_HARVESTER_SECTION_CORE_1"
+	ship_size = ae_harvester
+
+	fits_on_slot = "core"
+	entity = "fairy_01_juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { carrier artillery }
+	
+	prerequisites = { tech_starbase_1 }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 4
+	aux_utility_slots = 0
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}
+ship_section_template = {
+	key = "AE_HARVESTER_SECTION_RESOURCE"
+	ship_size = ae_harvester
+
+	fits_on_slot = "aux"
+	entity = "fairy_01_juggernaut_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { carrier artillery }
+
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 0
+	aux_utility_slots = 20
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 0
+		}
+	}
+}

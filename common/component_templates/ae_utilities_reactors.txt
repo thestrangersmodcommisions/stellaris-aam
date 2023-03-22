@@ -1,0 +1,215 @@
+utility_component_template = {
+	key = "AE_SHIP_FISSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	power = 3850
+	modifier = {
+
+		ship_tracking_add = 5
+		ship_shield_reduction = -0.1
+		ship_shield_hardening_add = 0.1
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 560
+		}
+		upkeep = {
+			energy = 5.6
+			alloys = 0.56
+		}
+	}
+
+	prerequisites = { "tech_fission_power" }
+	component_set = "power_core"
+	size_restriction = { ae_ark ae_harvester ae_archiver }
+	upgrades_to = "AE_SHIP_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "AE_SHIP_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	power = 5000
+	modifier = {
+		ship_hull_mult = 1
+		ship_shield_mult = 1
+		ship_armor_mult = 1
+		ship_tracking_add = 10
+		ship_shield_reduction = -0.2
+		ship_shield_hardening_add = 0.2
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 730
+		}
+		upkeep = {
+			energy = 7.28
+			alloys = 0.728
+		}
+	}
+
+	prerequisites = { "tech_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { ae_ark ae_harvester ae_archiver }
+	upgrades_to = "AE_SHIP_COLD_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "AE_SHIP_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	power = 6500
+	modifier = {
+		ship_hull_mult = 3
+		ship_shield_mult = 3
+		ship_armor_mult = 3
+		ship_tracking_add = 15
+		ship_shield_reduction = -0.3
+		ship_shield_hardening_add = 0.3
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 950
+		}
+		upkeep = {
+			energy = 9.46
+			alloys = 0.946
+		}
+	}
+
+	prerequisites = { "tech_cold_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { ae_ark ae_harvester ae_archiver }
+	upgrades_to = "AE_SHIP_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "AE_SHIP_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	power = 8460
+	modifier = {
+		ship_hull_mult = 6
+		ship_shield_mult = 6
+		ship_armor_mult = 6
+		ship_tracking_add = 20
+		ship_shield_reduction = -0.4
+		ship_shield_hardening_add = 0.4
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1230
+		}
+		upkeep = {
+			energy = 12.30
+			alloys = 1.230
+		}
+	}
+
+	prerequisites = { "tech_antimatter_power" }
+	component_set = "power_core"
+	size_restriction = { ae_ark ae_harvester ae_archiver }
+	upgrades_to = "AE_SHIP_ZERO_POINT_REACTOR"
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "AE_SHIP_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	power = 11000
+	modifier = {
+		ship_hull_mult = 9
+		ship_shield_mult = 9
+		ship_armor_mult = 9
+		ship_tracking_add = 25
+		ship_shield_reduction = -0.5
+		ship_shield_hardening_add = 0.5
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 1600
+		}
+		upkeep = {
+			energy = 15.99
+			alloys = 1.599
+		}
+	}
+
+	prerequisites = { "tech_zero_point_power" }
+	component_set = "power_core"
+	size_restriction = { ae_ark ae_harvester ae_archiver }
+	upgrades_to = "AE_SHIP_DARK_MATTER_REACTOR"
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "AE_SHIP_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 14300
+	modifier = {
+		ship_hull_mult = 9
+		ship_shield_mult = 9
+		ship_armor_mult = 9
+		ship_tracking_add = 30
+		ship_shield_reduction = -0.6
+		ship_shield_hardening_add = 0.6
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 2080
+			sr_dark_matter = 32
+		}
+		upkeep = {
+			energy = 20.79
+			alloys = 2.079
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { ae_ark ae_harvester ae_archiver }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+	}
+}

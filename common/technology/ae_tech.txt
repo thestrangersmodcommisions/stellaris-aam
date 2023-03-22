@@ -1,0 +1,11 @@
+tech_ae_arkships = {
+	area = engineering
+	tier = 0
+	category = { voidcraft }
+	prerequisites = { }
+	start_tech = yes
+
+	potential = {
+		has_origin = aam_origin
+	}
+}

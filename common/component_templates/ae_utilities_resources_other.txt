@@ -1,0 +1,22 @@
+utility_component_template = {
+	key = "AE_SHIPYARD"
+	size = aux
+	icon = "GFX_ae_shipyard"
+	icon_frame = 1
+	power = -100
+	
+	prerequisites = { "tech_ae_arkships" }
+	component_set = "AE_SHIPYARD"
+	size_restriction = { ae_ark }
+
+	modifier = {
+		starbase_shipyard_capacity_add = 1
+	}
+
+	resources = {
+		category = ae_buildings_energy
+		upkeep = {
+			energy = 1
+		}
+	}
+}

@@ -1,0 +1,26 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_battleship_mesh"
+		file = "gfx/models/ships/fairy_01/battleship/fairy_01_battleship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "battleship:___01Shape"
+			index = 0
+			texture_diffuse = "battleship_hull01_diffuse.dds"
+			texture_normal = "battleship_hull01_normal.dds"
+			texture_specular = "battleship_hull01_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		
+		meshsettings = {
+			name = "battleship:Object11477Shape"
+			index = 0
+			texture_diffuse = "battleship_hull02_diffuse.dds"
+			texture_normal = "battleship_hull02_normal.dds"
+			texture_specular = "battleship_hull02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

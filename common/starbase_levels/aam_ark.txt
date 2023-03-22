@@ -1,0 +1,6 @@
+aam_starbase_level_ark = {
+	ship_size = ae_ark
+	potential_home_base = yes
+	show_in_outliner = yes
+	collects_trade = no
+}

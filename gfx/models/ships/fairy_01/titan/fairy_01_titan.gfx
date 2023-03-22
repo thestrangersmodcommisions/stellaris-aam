@@ -1,0 +1,48 @@
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_titan_mesh"
+		file = "gfx/models/ships/fairy_01/titan/fairy_01_titan.mesh"
+		scale = 1.0
+
+		animation = { id = "idle" type = "fairy_01_titan_idle_animation" }
+		animation = { id = "clossing" type = "fairy_01_titan_clossing_animation" }
+
+		meshsettings = {
+			name = "titan:Object8457Shape"
+			index = 0
+			texture_diffuse = "titan_armor_01.dds"
+			texture_normal = "titan_armor_01_normal.dds"
+			texture_specular = "titan_armor_01_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8458Shape"
+			index = 0
+			texture_diffuse = "titan_armor_02.dds"
+			texture_normal = "titan_armor_02_normal.dds"
+			texture_specular = "titan_armor_02_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "titan:Object8456Shape"
+			index = 0
+			texture_diffuse = "titan_hull.dds"
+			texture_normal = "titan_hull_norm.dds"
+			texture_specular = "titan_hull_spec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "fairy_01_titan_frame_mesh"
+		file = "gfx/models/ships/fairy_01/titan/fairy_01_titan_frame.mesh"
+		scale = 1.0
+
+		animation = { id = "idle" type = "fairy_01_titan_frame_idle_animation" }
+		animation = { id = "clossing" type = "fairy_01_titan_frame_clossing_animation" }
+	}
+}

@@ -1,0 +1,25 @@
+aam_origin = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_shattered_ring.dds"
+	picture = GFX_origin_shattered_ring
+	
+	possible = { authority = { value = auth_machine_intelligence } }
+	#initializers = { aam_initializer }
+	
+	max_once_global = yes
+	
+	
+	description = "origin_tooltip_shattered_ring_effects"
+	
+	random_weight = {
+		base = 0
+		modifier = {
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	modifier = {
+		science_ship_survey_speed = 0.15
+		
+	}
+}

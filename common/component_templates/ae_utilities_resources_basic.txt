@@ -1,0 +1,328 @@
+@ae_T1_basic_power_cost = -200
+@ae_T2_basic_power_cost = -400
+@ae_T3_basic_power_cost = -600
+
+@ae_T1_basic_alloys_cost = 150
+@ae_T2_basic_alloys_cost = 200
+@ae_T3_basic_alloys_cost = 300
+
+@ae_T3_basic_sr_cost = 50
+
+@ae_T1_basic_energy_upkeep = 1
+@ae_T2_basic_energy_upkeep = 2
+@ae_T3_basic_energy_upkeep = 2
+
+@ae_T3_basic_sr_upkeep = 1
+
+@ae_2jobs_upkeep = 2
+
+#2 jobs
+utility_component_template = {
+	key = "AE_ENERGY_1"
+	size = aux
+	icon = "GFX_ae_energy_1"
+	icon_frame = 1
+	power = @ae_T1_basic_power_cost
+	
+	prerequisites = { "tech_ae_arkships" }
+	component_set = "AE_ENERGY_1"
+	size_restriction = { ae_harvester ae_ark }
+	
+	resources = {
+		category = ae_buildings_energy
+		cost = {
+			alloys = @ae_T1_basic_alloys_cost
+		}
+		upkeep = {
+			energy = @ae_T1_basic_energy_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		
+		produces = {
+			energy = 16
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_ENERGY_2"
+	size = aux
+	icon = "GFX_ae_energy_2"
+	icon_frame = 1
+	power = @ae_T2_basic_power_cost
+	
+	
+	prerequisites = { "tech_power_hub_1" }
+	component_set = "AE_ENERGY_2"
+	size_restriction = { ae_harvester ae_ark }
+	
+	upgrades_to = "AE_ENERGY_3"
+	ship_limit = 1
+	blocked_by = {
+		AE_ENERGY_3
+	}
+	modifier = {
+		ae_buildings_energy_energy_produces_add = 2
+	}
+	resources = {
+		category = ae_buildings_energy
+		cost = {
+			alloys = @ae_T2_basic_alloys_cost
+		}
+		upkeep = {
+			energy = @ae_T2_basic_energy_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			energy = 9
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_ENERGY_3"
+	size = aux
+	icon = "GFX_ae_energy_3"
+	icon_frame = 1
+	power = @ae_T3_basic_power_cost
+	
+	
+	prerequisites = { "tech_power_hub_2" }
+	component_set = "AE_ENERGY_3"
+	size_restriction = { ae_harvester ae_ark }
+	
+	ship_limit = 1
+	blocked_by = {
+		AE_ENERGY_2
+	}
+	modifier = {
+		ae_buildings_energy_energy_produces_add = 4
+	}
+	resources = {
+		category = ae_buildings_energy
+		cost = {
+			alloys = @ae_T3_basic_alloys_cost
+			exotic_gases = @ae_T3_basic_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T3_basic_energy_upkeep
+			exotic_gases = @ae_T3_basic_sr_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			energy = 20
+		}
+	}
+}
+#2 jobs
+utility_component_template = {
+	key = "AE_MINERALS_1"
+	size = aux
+	icon = "GFX_ae_minerals_1"
+	icon_frame = 1
+	power = @ae_T1_basic_power_cost
+	
+	prerequisites = { "tech_ae_arkships" }
+	component_set = "AE_MINERALS_1"
+	size_restriction = { ae_harvester ae_ark }
+	
+	resources = {
+		category = ae_buildings_minerals
+		cost = {
+			alloys = @ae_T1_basic_alloys_cost
+		}
+		upkeep = {
+			energy = @ae_T1_basic_energy_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		
+		produces = {
+			minerals = 8
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_MINERALS_2"
+	size = aux
+	icon = "GFX_ae_minerals_2"
+	icon_frame = 1
+	power = @ae_T2_basic_power_cost
+	
+	
+	prerequisites = { "tech_mineral_purification_1" }
+	component_set = "AE_MINERALS_2"
+	size_restriction = { ae_harvester ae_ark }
+	
+	upgrades_to = "AE_MINERALS_3"
+	ship_limit = 1
+	blocked_by = {
+		AE_MINERALS_3
+	}
+	modifier = {
+		ae_buildings_minerals_minerals_produces_add = 2
+	}
+	resources = {
+		category = ae_buildings_minerals
+		cost = {
+			alloys = @ae_T2_basic_alloys_cost
+		}
+		upkeep = {
+			energy = @ae_T2_basic_energy_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			minerals = 5
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_MINERALS_3"
+	size = aux
+	icon = "GFX_ae_minerals_3"
+	icon_frame = 1
+	power = @ae_T3_basic_power_cost
+	
+	
+	prerequisites = { "tech_mineral_purification_2" }
+	component_set = "AE_MINERALS_3"
+	size_restriction = { ae_harvester ae_ark }
+	
+	ship_limit = 1
+	blocked_by = {
+		AE_MINERALS_2
+	}
+	modifier = {
+		ae_buildings_minerals_minerals_produces_add = 4
+	}
+	resources = {
+		category = ae_buildings_minerals
+		cost = {
+			alloys = @ae_T3_basic_alloys_cost
+			volatile_motes = @ae_T3_basic_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T3_basic_energy_upkeep
+			volatile_motes = @ae_T3_basic_sr_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			minerals = 12
+		}
+	}
+}
+#2 jobs
+utility_component_template = {
+	key = "AE_FOOD_1"
+	size = aux
+	icon = "GFX_ae_food_1"
+	icon_frame = 1
+	power = @ae_T1_basic_power_cost
+	
+	prerequisites = { "tech_ae_arkships" }
+	component_set = "AE_FOOD_1"
+	size_restriction = { ae_harvester ae_ark }
+	
+	resources = {
+		category = ae_buildings_food
+		cost = {
+			alloys = @ae_T1_basic_alloys_cost
+		}
+		upkeep = {
+			energy = @ae_T1_basic_energy_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		
+		produces = {
+			food = 10
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_FOOD_2"
+	size = aux
+	icon = "GFX_ae_food_2"
+	icon_frame = 1
+	power = @ae_T2_basic_power_cost
+	
+	
+	prerequisites = { "tech_food_processing_1" }
+	component_set = "AE_FOOD_2"
+	size_restriction = { ae_harvester ae_ark }
+	
+	upgrades_to = "AE_FOOD_3"
+	ship_limit = 1
+	blocked_by = {
+		AE_FOOD_3
+	}
+	modifier = {
+		ae_buildings_food_food_produces_add = 2
+	}
+	resources = {
+		category = ae_buildings_food
+		cost = {
+			alloys = @ae_T2_basic_alloys_cost
+		}
+		upkeep = {
+			energy = @ae_T2_basic_energy_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			food = 6
+		}
+	}
+}
+utility_component_template = {
+	key = "AE_FOOD_3"
+	size = aux
+	icon = "GFX_ae_food_3"
+	icon_frame = 1
+	power = @ae_T3_basic_power_cost
+	
+	
+	prerequisites = { "tech_food_processing_2" }
+	component_set = "AE_FOOD_3"
+	size_restriction = { ae_harvester ae_ark }
+	
+	ship_limit = 1
+	blocked_by = {
+		AE_FOOD_2
+	}
+	modifier = {
+		ae_buildings_food_food_produces_add = 4
+	}
+	resources = {
+		category = ae_buildings_food
+		cost = {
+			alloys = @ae_T3_basic_alloys_cost
+			volatile_motes = @ae_T3_basic_sr_cost
+		}
+		upkeep = {
+			energy = @ae_T3_basic_energy_upkeep
+			volatile_motes = @ae_T3_basic_sr_upkeep
+		}
+		upkeep = {
+			energy = @ae_2jobs_upkeep
+		}
+		produces = {
+			food = 14
+		}
+	}
+}
+#2 jobs
+
+
+

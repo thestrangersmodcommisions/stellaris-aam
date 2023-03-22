@@ -1,0 +1,80 @@
+ae_ship_debuff_1 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_2 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_3 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_4 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_5 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_6 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_7 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_8 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_9 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_10 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_11 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_12 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_13 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_14 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_15 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_16 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_17 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_18 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_19 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}
+ae_ship_debuff_20 = {
+	ae_buildings_produces_mult = -0.05
+	ae_buildings_upkeep_mult = -0.05
+}

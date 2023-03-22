@@ -1,0 +1,84 @@
+﻿l_english:
+
+civic_aam_origin:  "Autonomous Analysis Machines"
+civic_aam_origin_desc:  "Autonomous Analysis Machines"
+
+tech_ae_arkships:  "Autonomous Analysis Machines"
+tech_ae_arkships_desc:  "Autonomous Analysis Machines"
+
+ae_archiver: "Archiver"
+ae_harvester: "Harvester"
+ae_ark: "Ark"
+
+AE_ARCHIVER_SECTION_CORE: "Archiver Core"
+AE_ARCHIVER_SECTION_RESOURCE: "Archiver Resource"
+
+AE_HARVESTER_SECTION_EMPTY: "Harvester Weapons"
+AE_HARVESTER_SECTION_CORE: "Harvester Core"
+AE_HARVESTER_SECTION_RESOURCE: "Harvester Resource"
+
+AE_ARK_SECTION_WEAPONS_EMPTY: "Ark Weapons"
+AE_ARK_SECTION_CORE: "Ark Core"
+AE_ARK_SECTION_RESOURCE: "Ark Resource"
+
+AE_ENERGY_1: "Solar Array"
+AE_ENERGY_1_DESC: "Produces: 16 £energy£\nUpkeep: 3 £energy£"
+AE_ENERGY_2: "Energy Grid"
+AE_ENERGY_1_DESC: "Solar Array +2 £energy£\nProduces: 9 £energy£\nUpkeep: 4 £energy£"
+AE_ENERGY_3: "Energy Nexus"
+AE_ENERGY_1_DESC: "Solar Array +4 £energy£\nProduces: 20 £energy£\nUpkeep: 4 £energy£ 1 £exotic_gases£"
+
+AE_MINERALS_1: "Mining Bay"
+AE_MINERALS_1_DESC: "Produces: 8 £minerals£\nUpkeep: 3 £energy£"
+AE_MINERALS_2: "Mineral Purification Plants"
+AE_MINERALS_2_DESC: "Mining Bay +2 £minerals£\nProduces: 5 £minerals£\nUpkeep: 4 £energy£"
+AE_MINERALS_3: "Mineral Purification Hubs"
+AE_MINERALS_3_DESC: "Mining Bay +4 £minerals£\nProduces: 12 £minerals£\nUpkeep: 4 £energy£ 1 £volatile_motes£"
+
+AE_FOOD_1: "Hydroponics Farms"
+AE_FOOD_1_DESC: "Produces: 10 £food£\nUpkeep: 3 £energy£"
+AE_FOOD_2: "Food Processing Facilities"
+AE_FOOD_2_DESC: "Mining Bay +2 £minerals£\nProduces: 6 £food£\nUpkeep: 4 £energy£"
+AE_FOOD_3: "Food Processing Centers"
+AE_FOOD_3_DESC: "Mining Bay +4 £minerals£\nProduces: 14 £food£\nUpkeep: 4 £energy£ 1 £volatile_motes£"
+
+AE_ALLOYS_1: "Alloy Foundries"
+AE_ALLOYS_1_DESC: "Produces: 8 £alloys£\nUpkeep: 4 £energy£ 16 £minerals£"
+AE_ALLOYS_2: "Alloy Forges"
+AE_ALLOYS_2_DESC: "Alloy Foundries +2 £alloys£\nProduces: 10 £alloys£\nUpkeep: 7 £energy£ 16 £minerals£ 2 £volatile_motes£"
+AE_ALLOYS_3: "Alloy Mega-Forges"
+AE_ALLOYS_3_DESC: "Alloy Foundries +4 £alloys£\nProduces: 12 £alloys£\nUpkeep: 10 £energy£ 16 £minerals£ 4 £volatile_motes£"
+
+AE_CONSUMER_GOODS_1: "Civilian Industries"
+AE_CONSUMER_GOODS_1_DESC: "Produces: 6 £consumer_goods£\nUpkeep: 4 £energy£ 12 £minerals£"
+AE_CONSUMER_GOODS_2: "Civilian Fabricators"
+AE_CONSUMER_GOODS_1_DESC: "Civilian Industries +2 £consumer_goods£\nProduces: 8 £consumer_goods£\nUpkeep: 7 £energy£ 12 £minerals£ 2 £rare_crystals£"
+AE_CONSUMER_GOODS_3: "Civilian Repli-Complexes"
+AE_CONSUMER_GOODS_1_DESC: "Civilian Industries +4 £consumer_goods£\nProduces: 10 £consumer_goods£\nUpkeep: 10 £energy£ 12 £minerals£ 4 £rare_crystals£"
+
+AE_VOLATILE_MOTES_1: "Chemical Plants"
+AE_VOLATILE_MOTES_1_DESC: "Produces: 2 £volatile_motes£\nUpkeep: 5 £energy£ 10 £minerals£"
+AE_EXOTIC_GASES_1: "Gas Refineries"
+AE_EXOTIC_GASES_1_DESC: "Produces: 2 £exotic_gases£\nUpkeep: 5 £energy£ 10 £minerals£"
+AE_RARE_CRYSTALS_1: "Crystal Plants"
+AE_RARE_CRYSTALS_1_DESC: "Produces: 2 £rare_crystals£\nUpkeep: 5 £energy£ 10 £minerals£"
+
+AE_RESEARCH_1: "Research Labs"
+AE_RESEARCH_1_DESC: "Produces: 8 £physics_research£ 8 £engineering_research£ 8 £society_research£\nUpkeep: 12 £energy£"
+AE_RESEARCH_2: "Research Complexes"
+AE_RESEARCH_2_DESC: "Produces: 16 £physics_research£ 16 £engineering_research£ 16 £society_research£\nUpkeep: 25 £energy£ 1 £exotic_gases£"
+AE_RESEARCH_3: "Advanced Research Complexes"
+AE_RESEARCH_3_DESC: "Produces: 24 £physics_research£ 24 £engineering_research£ 24 £society_research£\nUpkeep: 38 £energy£ 2 £exotic_gases£"
+AE_RESEARCH_4: "Research Institute"
+AE_RESEARCH_4_DESC: "Ship +15% £physics_research£ £engineering_research£ £society_research£\nProduces: 24 £physics_research£ 24 £engineering_research£ 24 £society_research£\nUpkeep: 30 £energy£"
+
+AE_UNITY_1: "Administrative Offices"
+AE_UNITY_1_DESC: "Produces: 8 £unity£\nUpkeep: 12 £energy£"
+AE_UNITY_2: "Administrative Park"
+AE_UNITY_2_DESC: "Produces: 16 £unity£\nUpkeep: 25 £energy£ 1 £rare_crystals£"
+AE_UNITY_3: "Administrative Complex"
+AE_UNITY_3_DESC: "Produces: 24 £unity£\nUpkeep: 38 £energy£ 2 £rare_crystals£"
+AE_UNITY_4: "Simulation Complex"
+AE_UNITY_4_DESC: "Ship +15% £unity£\nProduces: 24 £unity£\nUpkeep: 30 £energy£"
+
+AE_SHIPYARD: "Shipyard"

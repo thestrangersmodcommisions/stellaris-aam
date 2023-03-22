@@ -1,0 +1,10 @@
+on_game_start = {
+	events = {
+		ae_events.001
+	}
+}
+on_ship_built = {
+	events = {
+		ae_events.010
+	}
+}
